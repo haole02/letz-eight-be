@@ -16,8 +16,6 @@ Open your terminal and move into the API project directory:
 cd ./src/Presentation/LetzEight.Api
 ```
 
----
-
 ### 2. Run the application
 
 You can launch the API using either **HTTP** or **HTTPS** (recommended):
