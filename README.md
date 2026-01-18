@@ -1,4 +1,4 @@
-# wrkom
+# Welcomw to WRKOM
 
 Simple overview of use/purpose.
 
