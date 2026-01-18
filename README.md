@@ -1,106 +1,62 @@
-# 🧩 Letz-Eight Backend
+# Project Title
 
-Welcome to the **Letz-Eight Backend** project!
+Simple overview of use/purpose.
 
-This repository contains the API that powers the Letz-Eight application. Follow the instructions below to set up and run the project locally.
+## Description
 
----
+An in-depth paragraph about your project and overview of use.
 
-## 🚀 Getting Started
+## Getting Started
 
-### 1. Navigate to the API project
+### Dependencies
 
-Open your terminal and move into the API project directory:
+* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+* ex. Windows 10
 
-```bash
-cd ./src/Presentation/LetzEight.Api
+### Installing
+
+* How/where to download your program
+* Any modifications needed to be made to files/folders
+
+### Executing program
+
+* How to run the program
+* Step-by-step bullets
+```
+code blocks for commands
 ```
 
-### 2. Run the application
+## Help
 
-You can launch the API using either **HTTP** or **HTTPS** (recommended):
-
-```bash
-# Run with HTTPS (recommended)
-dotnet run -lp https
-
-# Or run with HTTP
-dotnet run -lp http
+Any advise for common problems or issues.
+```
+command to run if program contains helper info
 ```
 
----
+## Authors
 
-## ℹ️ What is `-lp`?
+Contributors names and contact info
 
-The `-lp` (short for **launch profile**) option tells .NET which profile from your `launchSettings.json` file to use when starting the application.
+ex. Dominique Pizzie  
+ex. [@DomPizzie](https://twitter.com/dompizzie)
 
-- `https` → Runs the app using the HTTPS profile (recommended for secure local testing)  
-- `http` → Runs the app using the HTTP profile
+## Version History
 
----
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
 
-## ✅ Example
+## License
 
-To start the API using the HTTPS profile:
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
-```bash
-dotnet run -lp https
-```
+## Acknowledgments
 
-This will start the **Letz-Eight API** using the HTTPS launch profile defined in `launchSettings.json`.
-
----
-
-## 🔧 Prerequisites
-
-- [.NET SDK](https://dotnet.microsoft.com/download) installed (use the SDK version matching the project).  
-- Recommended: a modern terminal (Windows: PowerShell / Windows Terminal; macOS / Linux: bash or zsh).
-
----
-
-## 🛠 Common Tasks & Tips
-
-- **Ports already in use**: If the configured port is occupied, edit `Properties/launchSettings.json` to change the port or stop the process using the port.  
-- **HTTPS development certificate**: If HTTPS fails locally, run `dotnet dev-certs https --trust` to trust the dev certificate (platform-specific prompt may appear).  
-- **Environment variables**: Configure environment values in your local environment or use a `.env` approach if the project supports it.  
-- **Run with a different profile**: Use any profile name defined in `launchSettings.json` via `dotnet run -lp <profileName>`.
-
----
-
-## 🧭 Project Structure (high level)
-
-```
-/src
-  /Presentation
-    /LetzEight.Api        ← API project (run this)
-  /Core
-    /LetzEight.Domain
-    /LetzEight.Application
-  /Infrastructure
-    /LetzEight.Infrastructure
-    /LetzEight.Presistence
-```
-
----
-
-## 🐞 Troubleshooting
-
-- If `dotnet run` fails, check the console error for missing SDK or invalid launch profile name.  
-- If HTTPS endpoint is unreachable, verify the HTTPS profile settings in `launchSettings.json` and the dev certificate.  
-- If migrations or DB connection issues happen, double-check connection strings and that the DB server is running.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome. Please open issues or PRs for bug fixes, features, or documentation improvements.
-
----
-
-## 📄 License
-
-Add your license information here (e.g., MIT, Apache-2.0) if applicable.
-
----
-
-**Happy coding! 💻**
+Inspiration, code snippets, etc.
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [dbader](https://github.com/dbader/readme-template)
+* [zenorocha](https://gist.github.com/zenorocha/4526327)
+* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
