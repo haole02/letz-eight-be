@@ -1,0 +1,2 @@
+Hello my friend,
+This is a text file.
