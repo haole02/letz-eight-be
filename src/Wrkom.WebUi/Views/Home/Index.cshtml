@@ -1,0 +1,11 @@
+﻿@using Wrkom.WebUi.Models.ViewModels;
+@model UserViewModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Model.Username</h1>
+    <p>Happy Birth Day (@Model.DateOfBirth)</p>
+</div>
