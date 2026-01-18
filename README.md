@@ -1,6 +1,6 @@
-# Welcomw to WRKOM
+# Welcome to wrkom
 
-Simple overview of use/purpose.
+A friendly and powerful chat app for team/enterprise.
 
 ## Description
 
