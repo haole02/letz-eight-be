@@ -2,19 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            // Use IntelliSense to find out which attributes exist for C# debugging
-            // Use hover for the description of the existing attributes
-            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/src/Wrkom.WebUi/bin/Debug/net9.0/Wrkom.WebUi.dll",
-            "args": ["--urls", "http://localhost:5230"],
+            "args": [
+                "--urls",
+                "http://localhost:5230"
+            ],
             "cwd": "${workspaceFolder}/src/Wrkom.WebUi",
             "stopAtEntry": false,
-            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
@@ -24,6 +22,26 @@
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Launch (blazor)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/Wrkom.WebBlazor/bin/Debug/net9.0/Wrkom.WebBlazor.dll",
+            "args": [
+                "--urls",
+                "http://localhost:5240"
+            ],
+            "cwd": "${workspaceFolder}/src/Wrkom.WebBlazor",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
             }
         },
         {
