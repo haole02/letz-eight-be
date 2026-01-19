@@ -1,16 +1,38 @@
-﻿<MudNavMenu>
-    <MudStack Row AlignItems="AlignItems.Center" Class="px-4">
+﻿@using Wrkom.WebBlazor.Components.Common
+@inject IDialogService DialogService
+
+<MudNavMenu Class="px-3">
+    <MudStack Row AlignItems="AlignItems.Center" Class="">
         <MudAvatar Color="Color.Primary" Size="@Size.Medium">H</MudAvatar>
 
         <MudStack Spacing="0">
             <MudText Typo="Typo.h6" Class="mb-0 mt-n1">Hao Le</MudText>
             <MudText Typo="Typo.body2" Class="mt-n1" Color="Color.Dark">@@haole</MudText>
         </MudStack>
+
+        <MudSpacer />
+
+        <MudIconButton Icon="@Icons.Material.Filled.Add" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Small" aria-label="add" />
     </MudStack>
 
-    <MudDivider Class="mt-4" />
+    <div class="w-100 my-4">
+        <MudButton Variant="Variant.Outlined" Class="w-100" StartIcon="@Icons.Material.Filled.Search" OnClick="OpenDialogAsync">Search</MudButton>
+    </div>
 
-    <MudNavLink Href="/counter" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink>
-    <MudNavLink Href="/weather" Icon="@Icons.Material.Filled.WbSunny">Weather</MudNavLink>
-    <MudNavLink Href="/messages" Icon="@Icons.Material.Filled.Chat">Messages</MudNavLink>
+    <MudDivider Class="border-dark mb-4" />
+
+    <div class="">
+        <MudNavLink Href="/messages" Class="my-2 rounded overflow-hidden" Icon="@Icons.Material.Filled.Chat">Messages</MudNavLink>
+        <MudNavLink Href="/counter" Class="my-2 rounded overflow-hidden" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink>
+        <MudNavLink Href="/weather" Class="my-2 rounded overflow-hidden" Icon="@Icons.Material.Filled.WbSunny">Weather</MudNavLink>
+    </div>
 </MudNavMenu>
+
+@code {
+    
+    private Task OpenDialogAsync()
+    {
+        var options = new DialogOptions { CloseOnEscapeKey = true };
+        return DialogService.ShowAsync<AddDialog>("Search", options);
+    }
+}

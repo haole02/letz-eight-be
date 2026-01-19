@@ -117,9 +117,9 @@
     {
         _scrollListener = ScrollListenerFactory.Create(null);
         _scrollListener.OnScroll += OnScrollAsync;
-        messages.Add(new Message("Obi-Wan Kenobi", "OK", "You were my brother Anakin.", "2 hours ago"));
-        messages.Add(new Message("Obi-Wan Kenobi", "OK", "I loved you.", "2 hours ago"));
-        messages.Add(new Message("Anakin Skywalker", "AS", "I'm sorry.", "1 hour ago"));
+        messages.Add(new Message("Obi-Wan Kenobi", "O", "You were my brother Anakin.", "2 hours ago"));
+        messages.Add(new Message("Obi-Wan Kenobi", "O", "I loved you.", "2 hours ago"));
+        messages.Add(new Message("Anakin Skywalker", "A", "I'm sorry.", "1 hour ago"));
     }
 
     private void OnScrollAsync(object? sender, ScrollEventArgs e)
