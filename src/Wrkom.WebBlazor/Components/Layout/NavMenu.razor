@@ -1,30 +1,16 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Wrkom.WebBlazor</a>
-    </div>
-</div>
+﻿<MudNavMenu>
+    <MudStack Row AlignItems="AlignItems.Center" Class="px-4">
+        <MudAvatar Color="Color.Primary" Size="@Size.Medium">H</MudAvatar>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+        <MudStack Spacing="0">
+            <MudText Typo="Typo.h6" Class="mb-0 mt-n1">Hao Le</MudText>
+            <MudText Typo="Typo.body2" Class="mt-n1" Color="Color.Dark">@@haole</MudText>
+        </MudStack>
+    </MudStack>
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="nav flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
+    <MudDivider Class="mt-4" />
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
+    <MudNavLink Href="/counter" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink>
+    <MudNavLink Href="/weather" Icon="@Icons.Material.Filled.WbSunny">Weather</MudNavLink>
+    <MudNavLink Href="/messages" Icon="@Icons.Material.Filled.Chat">Messages</MudNavLink>
+</MudNavMenu>
